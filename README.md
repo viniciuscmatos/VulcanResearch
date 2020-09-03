@@ -10,8 +10,4 @@ Ainda não é necessário digitar npm para o pseudo-site funcionar.
 
 ## Tecnologias utilizadas
 
-HTML
-CSS
-SASS
-JAVASCRIPT
-JQUERY
+Html, css, sass, javascript & jquery.
