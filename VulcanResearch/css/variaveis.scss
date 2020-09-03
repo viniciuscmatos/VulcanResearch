@@ -1,0 +1,12 @@
+$azul-escuro: #2e4b72;
+$azul-claro: #4c80c5;
+$cinza: #f9f9f9;
+$cinza-escuro:#acacac;
+$cinza-darken:#797979;
+
+@mixin center {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}

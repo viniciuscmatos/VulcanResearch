@@ -1,0 +1,59 @@
+@import 'variaveis';
+
+.body .header .footer{
+    font-family: 'Roboto';
+}
+
+.header{
+    align-items: center;
+    background: $cinza;
+    display: flex;
+}
+
+.logo{
+    padding: 0.4em;
+    width: 18%;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1204px;
+    @include center;
+}
+
+.menu-lista{
+    display: flex;
+    list-style: none;
+}
+a {
+    text-decoration:none; 
+    color: black;
+}
+.menu-item{
+    padding: 0em 1em 0 1em;
+}
+
+.menu-item:hover{
+    color: $azul-claro;
+    transition: ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.menu-botao{
+    background: $azul-claro;
+    border: solid 1.5px $azul-claro;
+    border-radius: 25px;
+    color: $cinza;
+    height: 2.2em;
+    width: 13%;
+}
+
+.menu-botao:hover{
+    background: transparent;
+    border: solid 1.5px $azul-claro;
+    color: $azul-claro;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Vulcan Reaserch - Logical Investments</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <img class="logo" src="./img/banner-lt.png" alt="">
+            <ul class="menu-lista">
+                <a href="index.html"><li class="menu-item">Home</li></a>
+                <li class="menu-item">Relatórios</li>
+                <a href="carteiras.html"><li class="menu-item">Carteiras</li></a>
+                <a href="analitica.html"><li class="menu-item" id="link-analitica">Analítica</li></a>
+                <li class="menu-item">Podcast</li>
+                <li class="menu-item">Sobre</li>
+                <li class="menu-item">Contato</li>
+                <li class="menu-item">Login</li>
+            </ul>
+            <button class="menu-botao">Invista Conosco</button>
+        </nav>
+    </header>
+    <main class="main-carteira">
+        <section class="cabecalho-carteira">
+            <img class="carteira-icon" src="./img/analitica.png" alt="">
+            <h2 class="titulo-carteira">Vulcan Analítica</h2>
+        </section>
+        <section class="sec-busca">
+                <div class="div-busca">
+                <input class="busca-ativo" id="campo-busca" type="text" placeholder="SQIA3, SUNO3..." style='text-transform:uppercase'>
+                <button class="botao-busca-ativo" id="botao"type="submit">Buscar</button>
+                </div>
+                <span id="msg-erro"></span> 
+        </section>
+        <section class="container-dados">
+            <section class="main-carteira-tabela">
+                <div class="div-titulo-ativo">
+                    <h2 class="titulo-ativo" id="nomeAtivo"></h2>
+                    <img class="ativos-card-icon" id="logo-ativo" src="" alt="">
+                </div>
+                <section class="info-ativo-valor">
+                    <div class="info-ativo">
+                        <h3 class="nome-info">VALOR ATUAL</h3>
+                        <h4 class="info-valor" id="valor-atual"></h4>
+                    </div>
+                    <div class="info-ativo">
+                        <h3 class="nome-info">MIN. 52 SEMANAS</h3>
+                        <h4 class="info-valor" id="min52"></h4>
+                        <h5 class="nome-info-bottom">MIN. MÊS</h5>
+                        <h4 class="info-valor-bottom" id="minM"></h4>
+                    </div>
+                    <div class="info-ativo">
+                        <h3 class="nome-info">MAX. 52 SEMANAS</h3>
+                        <h4 class="info-valor" id="max52"></h4>
+                        <h5 class="nome-info-bottom">MAX. MÊS</h5>
+                        <h4 class="info-valor-bottom" id="maxM"></h4>
+                    </div>
+                    <div class="info-ativo">
+                        <h3 class="nome-info">DIVIDEND YIELD</h3>
+                        <h4 class="info-valor" id="dy"></h4>
+                        <h5 class="nome-info-bottom">ULTIMOS 12 MESES</h5>
+                        <h4 class="info-valor-bottom" id="ul12"></h4>
+                    </div>
+                    <div class="info-ativo">
+                        <h3 class="nome-info">VALORIZAÇÃO (12M)</h3>
+                        <h4 class="info-valor" id="vl12"></h4>
+                        <h5 class="nome-info-bottom">MÊS ATUAL</h5>
+                        <h4 class="info-valor-bottom" id="mesA"></h4>
+                    </div>    
+                </section>
+                <section class="cabecalho-indicadores">
+                    <h2 class="titulo-indicadores" id="indicadores-de"></h2>
+                    <h5 class="titulo-valuation">INDICADORES DE VALUATION</h5>
+                </section>
+                <section class="tabela-indicadores">
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/L</h3>
+                        <h4 class="valor-indicador" id="pL"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">EV/EBITDA</h3>
+                        <h4 class="valor-indicador" id="evEbtda"></h4>
+                    </div> 
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/VP</h3>
+                        <h4 class="valor-indicador" id="pVp"></h4>
+                    </div> 
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">EV/EBIT</h3>
+                        <h4 class="valor-indicador" id="evEbit"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/EBITDA</h3>
+                        <h4 class="valor-indicador" id="pEbitda"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/EBIT</h3>
+                        <h4 class="valor-indicador" id="pEbit"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">VPA</h3>
+                        <h4 class="valor-indicador" id="vPa"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/ATIVO</h3>
+                        <h4 class="valor-indicador" id="pAtivo"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">LPA</h3>
+                        <h4 class="valor-indicador" id="lPa"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/SR</h3>
+                        <h4 class="valor-indicador" id="pSr"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/CAP. GIRO</h3>
+                        <h4 class="valor-indicador" id="pCapGiro"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">P/ATIVO CIRC. LIQ.</h3>
+                        <h4 class="valor-indicador" id="pAtivoCircLiq"></h4>
+                    </div>
+                </section>
+                <section class="cabecalho-indicadores">
+                    <h5 class="titulo-valuation">INDICADORES DE ENDIVIDAMENTO</h5>
+                </section>
+                <section class="tabela-indicadores">
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">Dív. líquida/PL</h3>
+                        <h4 class="valor-indicador" id="divLiqPL"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">Dív. líquida/EBITDA</h3>
+                        <h4 class="valor-indicador" id="divLiqEbitda"></h4>
+                    </div> 
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">Dív. líquida/EBIT</h3>
+                        <h4 class="valor-indicador" id="divLiqEbit"></h4>
+                    </div> 
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">PL/Ativos</h3>
+                        <h4 class="valor-indicador" id="plAtivos"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">Passivo/Ativos</h3>
+                        <h4 class="valor-indicador" id="pasAtivos"></h4>
+                    </div>
+                    <div class="indicadores-ativo">
+                        <h3 class="nome-indicador">Liq. corrente</h3>
+                        <h4 class="valor-indicador" id="liqCorrente"></h4>
+                    </div>
+                </section>
+                <section class="card-indicadores">
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Patrimônio líquido</h3>
+                        <h4 class="valor-indicador-card" id="plAbs"></h4>
+                    </div>
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Ativos</h3>
+                        <h4 class="valor-indicador-card" id="ativoAbs"></h4>
+                    </div> 
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Ativo circulante</h3>
+                        <h4 class="valor-indicador-card" id="ativoCircAbs"></h4>
+                    </div> 
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Dívida bruta</h3>
+                        <h4 class="valor-indicador-card" id="divBrtAbs"></h4>
+                    </div>
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Disponibilidade</h3>
+                        <h4 class="valor-indicador-card" id="dispAbs"></h4>
+                    </div>
+                    <div class="indicadores-ativo-card">
+                        <h3 class="nome-indicador-card">Dívida líquida</h3>
+                        <h4 class="valor-indicador-card" id="divLiqAbs"></h4>
+                    </div>
+                </section>
+                <section class="disclaimer">
+                    <h5 class="titulo-disclaimer">DISCLAIMER</h5>
+                    <h5 class="texto-disclaimer">Todas as informações apresentadas tem caráter informativo e são provenientes de fontes públicas como B3, CVM, Tesouro Nacional, etc. e de dados calculados a partir das informações coletadas. O Vulcan Analítica não tem o objetivo de fazer sugestão de compra ou venda de ativos, sendo assim, não se responsabiliza pelas decisões e caminhos tomados a partir da análise das informações aqui apresentadas.</h6>
+                </section>
+            </section>
+        </section>
+        <section class="container-recursos">
+            <h2 class="titulo-recursos">Recursos do Vulcan Analítica</h2>
+            <section class="recursos-infos">
+                <div class="recursos-card">
+                    <img class="recursos-card-icon" src="./img/analytics.png" alt="">
+                    <span>Lorem ipsum</span>
+                    <span>Dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.</span>
+                </div>
+                <div class="recursos-card">
+                    <img class="recursos-card-icon" src="./img/data.png" alt="">
+                    <span>Etiam eget</span>
+                    <span>Ligula eu lectus lobortis condimentum. Qui quidem mollitia debitis voluptatem vero nihil sint ut.</span>
+                </div>
+                <div class="recursos-card">
+                    <img class="recursos-card-icon" src="./img/up.png" alt="">
+                    <span>Pellentesque habitant</span>
+                    <span>Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Et tempora sit non non sit. Aut iure ipsa modi.</span>
+                </div>
+            </section>
+            <h2 class="titulo-recursos">Ativos mais buscados</h2>
+            <section class="recursos-infos">
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/SUNO3.png" alt="">
+                    <span name='teste'>SUNO3</span>
+                    <span>R$ 7,46</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/SQIA3.png" alt="">
+                    <span>SQIA3</span>
+                    <span>R$ 25,23</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/TAEE11.png" alt="">
+                    <span>TAEE11</span>
+                    <span>R$ 29,32</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/ENBR3.png" alt="">
+                    <span>ENBR3</span>
+                    <span>R$ 17,98</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/WEGE3.png" alt="">
+                    <span>WEGE3</span>
+                    <span>R$ 67,19</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/MGLU3.png" alt="">
+                    <span>MGLU3</span>
+                    <span>R$ 94,58</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/AZUL4.png" alt="">
+                    <span>AZUL4</span>
+                    <span>R$ 22,88</span>
+                </div>
+                <div class="ativos-card">
+                    <img class="ativos-card-icon" src="./img/BIDI11.png" alt="">
+                    <span>BIDI11</span>
+                    <span>R$ 64,75</span>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <section class="footer-one">
+            <ul class="footer-lista">
+                <h4 class="lista-nome">Acesso Rápido</h4>
+                <li class="item-lista-footer">Sobre a Vulcan</li>
+                <li class="item-lista-footer">Termos de Uso</li>
+                <li class="item-lista-footer">Cursos Online</li>
+                <li class="item-lista-footer">Política de Privacidade</li>
+                <li class="item-lista-footer">Trabalhe Conosco</li>
+                <li class="item-lista-footer">Login</li>
+            </ul>
+            <ul class="footer-lista">
+                <h4 class="lista-nome">Relatórios</h4>
+                <li class="item-lista-footer">Acões</li>
+                <li class="item-lista-footer">Small Caps</li>
+                <li class="item-lista-footer">Fundos Imobiliários</li>
+                <li class="item-lista-footer">Fundos de Ações</li>
+                <li class="item-lista-footer">Renda Fixa</li>
+                <li class="item-lista-footer">Finanças Pessoais</li>
+            </ul>
+            <ul class="footer-lista">
+                <h4 class="lista-nome">Contato</h4>
+                <li class="item-lista-footer">Suporte: suporte@vulcan.com.br</li>
+                <li class="item-lista-footer">Imprensa: imprensa@vulcan.com.br</li>
+                <section class="social-media">
+                    <img class="social-media-icon" src="./img/instagram.png" alt="">
+                    <img class="social-media-icon"  src="./img/facebook.png" alt="">
+                    <img class="social-media-icon"  src="./img/twitter.png" alt="">
+                    <img class="social-media-icon"  src="./img/linkedin.png" alt="">
+                </section>
+            </ul>
+        </section>
+        <section class="footer-two">
+                <img class="footer-logo" src="./img/logo.png" alt="">
+                <span class="footer-logo-texto" >Vulcan Research | Avenida Embaixador Juscelino Sarek, 1701 Torre D, 10º Andar, São Francisco – SP, <br>04243-071 | Copyright 2020 © Vulcan Research</span>
+        </section>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/calcula-variacao.js"></script>
+    <script src="js/satus-compra.js"></script>
+    <script src="js/consulta-b3.js"></script>
+</body>
+</html>

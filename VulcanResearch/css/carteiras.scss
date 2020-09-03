@@ -1,0 +1,118 @@
+@import 'variaveis';
+
+.main-carteira{
+    background-color: $cinza;
+}
+
+.conteiner{
+    width: 60%;
+}
+
+.main-carteira-tabela{
+    font-family: 'Open Sans';
+}
+
+.cabecalho-carteira{
+    align-items: flex-end;
+    background-color: $cinza;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+.titulo-carteira{
+    margin-top: 1%;
+    color: $azul-escuro;
+    font-size: 2em;
+}
+
+.carteira-icon{
+    width: 3em;
+    height: 3em;
+    margin: 0 0.4% 0.4%;
+}
+
+.tabela-fii{
+    border-collapse: collapse;
+    margin: 1.5em 0 1.5em 0;
+    @include center;
+    width: 60%;
+}
+
+.tabela-fii thead{
+    color: $azul-escuro;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+.tabela-fii-cabecalho td{
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+
+.tabela-fii-linha td{
+    padding: 1.5em;
+    border-bottom: solid 1px $cinza-escuro;
+    text-align: center;
+    max-width: 60%;
+}
+
+.tabela-fii-linha td:nth-child(3){
+    width: 0.8em;
+}
+.tabela-fii-linha td:nth-child(4){
+    width: 0.8em;
+}
+.tabela-fii-linha td:nth-child(5){
+    width: 0.8m;
+}
+.tabela-fii-linha td:nth-child(6){
+    width: 0.8em;
+}
+.tabela-fii-linha td:nth-child(7){
+    width: 0.8em;
+}
+
+.green{
+    color: green;
+}
+
+.wine{
+    color: rgb(163, 20, 20);
+}
+
+.tabelas-infos{
+    display: flex;
+    flex-direction: row;
+    @include center;
+    justify-content: space-between;
+    padding: 1.5em 0 1.5em 0;
+    width: 73.5%;
+}
+
+.info-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 24.5%;
+    justify-content: flex-start;
+}
+
+.info-card span{
+    padding: 0.5em 0 0.5em 0;
+    font-size: 0.8em;
+}
+
+.info-card span:nth-child(2){
+    font-weight: bold;
+    font-size: 1.05em;
+    color: $azul-escuro;
+}
+
+.info-card span:nth-child(3){
+    padding-bottom: 2em;
+}
+
+.info-card-icon{
+    width: 15%;
+    padding: 0.5em;
+    opacity: 0.2;
+}

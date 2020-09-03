@@ -1,0 +1,60 @@
+@import 'variaveis';
+
+.footer-one{
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    border-bottom: 0.1px solid #474747;
+}
+.footer-lista{
+    color: $cinza;
+    padding-right: 18%;
+}
+
+.footer-lista:nth-child(1){
+    padding-left: 2%;
+}
+
+.lista-nome{
+    font-size: 1.2em;
+    padding: 0.3em 0 0.5em 0.3em;
+}
+
+.item-lista-footer{
+    font-size: 0.8em;
+    padding: 0.5em;
+    list-style: none;
+}
+
+.item-lista-footer:hover{
+    cursor: pointer;
+}
+
+.social-media-icon{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 5%;
+    opacity: 0.8;
+}
+.social-media-icon:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.footer-two{
+    background: black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    width: 7%;
+    height: 7%;
+    padding: 2%;
+}
+
+.footer-logo-texto{
+    padding: 3.5%;
+    color: $cinza;
+    font-size: 0.8em;
+}

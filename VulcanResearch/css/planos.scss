@@ -1,0 +1,58 @@
+@import 'variaveis';
+
+.main-planos{
+    background-color: $cinza;
+    display: flex;
+    justify-content: center;
+}
+
+.conheca-texto{
+    background-color: $cinza;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    color: $azul-escuro;
+    font-size: 2.2em;
+}
+
+.planos-card{
+    width: 17%;
+    border-bottom: 4px solid $cinza;
+    margin-left: 4%;
+}
+.planos-card:hover{
+    cursor: pointer;
+}
+.planos-card:nth-child(1){
+    margin-left: 0;
+}
+
+.planos-card:hover{
+    border-bottom: 4px solid$azul-escuro;
+}
+
+.nome-plano{
+    background  : $azul-escuro;
+    font-size: 1.7em;
+    text-align: center;
+    color: $cinza;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 1.2em;
+}
+
+.itens-plano{
+    margin: 0;
+}
+.item-plano{
+    border-bottom: 1px solid $cinza-escuro;
+    list-style: none;
+    padding: .5em;
+    font-size: 0.95em;
+}
+
+.valor-plano{
+    text-align: center;
+    color: $azul-escuro;
+    padding: 0.8em;
+}
