@@ -6,4 +6,12 @@ As informações contidas aqui, sob nenhuma hipótese, podem ser consideradas co
 
 ## Instalação
 
-Ainda não é necessário digitar npm para o pseudo-site funcionar.
+Ainda não é necessário digitar npm para o pseudo-site funcionar. 
+
+## Tecnologias utilizadas
+
+HTML
+CSS
+SASS
+JAVASCRIPT
+JQUERY
